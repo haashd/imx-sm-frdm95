@@ -281,6 +281,7 @@
         .clkPerms[DEV_SM_CLK_LPUART6] = SM_SCMI_PERM_ALL, \
         .clkPerms[DEV_SM_CLK_LPUART7] = SM_SCMI_PERM_ALL, \
         .clkPerms[DEV_SM_CLK_LPUART8] = SM_SCMI_PERM_ALL, \
+        .clkPerms[DEV_SM_CLK_M7SYSTICK] = SM_SCMI_PERM_ALL, \
         .clkPerms[DEV_SM_CLK_MIPIPHYCFG] = SM_SCMI_PERM_ALL, \
         .clkPerms[DEV_SM_CLK_MIPIPHYPLLBYPASS] = SM_SCMI_PERM_ALL, \
         .clkPerms[DEV_SM_CLK_MIPIPHYPLLREF] = SM_SCMI_PERM_ALL, \
@@ -306,6 +307,7 @@
         .clkPerms[DEV_SM_CLK_VIDEOPLL1_VCO] = SM_SCMI_PERM_ALL, \
         .clkPerms[DEV_SM_CLK_VPUDSP] = SM_SCMI_PERM_ALL, \
         .clkPerms[DEV_SM_CLK_XSPISLVROOT] = SM_SCMI_PERM_ALL, \
+        .cpuPerms[DEV_SM_CPU_M7P] = SM_SCMI_PERM_ALL, \
         .ctrlPerms[BRD_SM_CTRL_BT_WAKE] = SM_SCMI_PERM_NOTIFY, \
         .ctrlPerms[BRD_SM_CTRL_BUTTON] = SM_SCMI_PERM_NOTIFY, \
         .ctrlPerms[BRD_SM_CTRL_PCIE1_WAKE] = SM_SCMI_PERM_NOTIFY, \
@@ -445,11 +447,13 @@
         .gprPerms[DEV_SM_GPR_5] = SM_SCMI_PERM_ALL, \
         .gprPerms[DEV_SM_GPR_6] = SM_SCMI_PERM_ALL, \
         .gprPerms[DEV_SM_GPR_7] = SM_SCMI_PERM_ALL, \
-        .lmmPerms[1] = SM_SCMI_PERM_NOTIFY, \
+        .lmmPerms[1] = SM_SCMI_PERM_ALL, \
+        .lmmPerms[2] = SM_SCMI_PERM_ALL, \
         .pdPerms[DEV_SM_PD_CAMERA] = SM_SCMI_PERM_ALL, \
         .pdPerms[DEV_SM_PD_DISPLAY] = SM_SCMI_PERM_ALL, \
         .pdPerms[DEV_SM_PD_GPU] = SM_SCMI_PERM_ALL, \
         .pdPerms[DEV_SM_PD_HSIO_TOP] = SM_SCMI_PERM_ALL, \
+        .pdPerms[DEV_SM_PD_M7] = SM_SCMI_PERM_ALL, \
         .pdPerms[DEV_SM_PD_NETC] = SM_SCMI_PERM_ALL, \
         .pdPerms[DEV_SM_PD_NPU] = SM_SCMI_PERM_ALL, \
         .pdPerms[DEV_SM_PD_VPU] = SM_SCMI_PERM_ALL, \
@@ -457,6 +461,7 @@
         .perfPerms[DEV_SM_PERF_CAM] = SM_SCMI_PERM_ALL, \
         .perfPerms[DEV_SM_PERF_DISP] = SM_SCMI_PERM_ALL, \
         .perfPerms[DEV_SM_PERF_GPU] = SM_SCMI_PERM_ALL, \
+        .perfPerms[DEV_SM_PERF_M7] = SM_SCMI_PERM_ALL, \
         .perfPerms[DEV_SM_PERF_NPU] = SM_SCMI_PERM_ALL, \
         .perfPerms[DEV_SM_PERF_VPU] = SM_SCMI_PERM_ALL, \
         .perlpiPerms[DEV_SM_PERLPI_CAN2] = SM_SCMI_PERM_ALL, \
@@ -602,7 +607,7 @@
         .sensorPerms[BRD_SM_SENSOR_TEMP_PF5302] = SM_SCMI_PERM_SET, \
         .sensorPerms[DEV_SM_SENSOR_TEMP_A55] = SM_SCMI_PERM_ALL, \
         .sensorPerms[DEV_SM_SENSOR_TEMP_ANA] = SM_SCMI_PERM_SET, \
-        .sysPerms = SM_SCMI_PERM_NOTIFY, \
+        .sysPerms = SM_SCMI_PERM_ALL, \
     }
 
 /*! Config for SCMI channel 5 */
